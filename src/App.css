@@ -1,0 +1,221 @@
+.flexSpace {
+  -ms-flex: 1 1 0.000000001px;
+  flex: 1 1;
+  -ms-flex-preferred-size: 0.000000001px;
+  flex-basis: 0.000000001px;
+}
+.FlexList {
+  box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.FlexItem {
+  box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: inline-block;
+  text-align: center;
+}
+
+
+
+
+
+.LoginCont{
+  background: #fff;
+  min-height: 70vh;
+  padding: 100px 15px 50px 15px;;
+}
+.LoginForm{
+  width: 560px;
+  margin: 0px auto ;  
+  padding: 50px 0 ;
+  min-height: 400px;
+  vertical-align: middle;
+  box-shadow: 0 1px 3px 0 rgba(41,70,97,.2);
+  position: relative;
+  align-items: center;
+  padding: 25px 20px 45px 20px;
+  border-radius:  2px; 
+  box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.LoginFormSides{
+  flex: 1 1 0px;
+  display: flex;
+  max-width: 270px;
+  min-width: 220px;
+  margin: 0px auto;
+
+}
+
+@media only screen and (max-width: 680px){
+  .LoginForm{
+    width: 90%;    
+  }
+}
+
+
+.ActionContainer{
+  margin: 50px auto 0 auto;
+  width: 162px;
+}
+
+.LoginFormContainer{
+  max-width: 250px;
+  display: block;
+  position: relative;
+}
+
+
+.LoginFormItem{
+  display: block
+}
+
+.InputLoginClass{    
+  min-width: 229px;
+  padding: 13px;
+  border-radius: 13px;  
+  outline: none;
+  color: #546b81;
+  border: 1px solid #0091ea;
+}
+
+.InputLoginClassError{    
+  min-width: 229px;
+  padding: 13px;
+  border-radius: 13px;  
+  outline: none;
+  color: #546b81;
+  border: 1px solid firebrick;
+}
+
+ .errMsg{
+  color:firebrick;
+  font-size: 13px;
+  padding: 5px 9px; 
+}
+
+.InputLabelClass{
+  margin: 15px 10px;
+}
+
+.LoginFormButton{
+  min-width: 160px;    
+  height: 44px;
+  vertical-align: middle;
+  box-shadow: 0 1px 3px 0 rgba(41,70,97,.2);
+  background-color: #0091ea;
+  color: #fff;
+  border: 1px solid #0091ea;
+  padding: 13px;
+  border-radius: 13px;  
+  outline: none;
+  cursor: pointer;
+}
+
+.LoginDisabledFormButton{
+  min-width: 160px;    
+  height: 44px;
+  vertical-align: middle;
+  box-shadow: 0 1px 3px 0 rgba(41,70,97,.2);
+  background-color: #aaa;
+  color: #999;
+  border: 1px solid #aaa;
+  padding: 13px;
+  border-radius: 13px;  
+  outline: none;
+  cursor: default;
+}
+
+
+.InfoFormSides{
+  text-align: center;
+  padding: 10% 20%; 
+}
+
+.InfoFormSides .title{
+  font-family: Colfax-Regular,helvetica,sans-serif;
+  font-style: normal;
+  font-size: 21px;
+  font-weight: 600;
+  color: inherit;
+  text-rendering: optimizeLegibility;
+  margin: 15px 0; 
+}
+.InfoFormSides .description{
+  font-family: Colfax-Regular,helvetica,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: #aaa;
+  text-rendering: optimizeLegibility;
+  margin: 25px 0 0 0;
+}
+
+
+
+._app_body_content_{
+  width: var(--app-body-content-wapper--);
+  left: var(--app-body-content-wapper--left--);
+  position: relative;
+  transition: left 250ms ease,width 250ms ease; 
+  min-height: 1000px;
+}
+
+
+._separator_ {
+  height: 1px;
+  width: 96%;
+  margin: 0 auto;
+  background-color: #dcdcdc;
+}
+
+._dsplFlx{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.detailsView .printcallout .printcallout-body .printcallout-message {
+  font: 600 15px/17px Roboto,"Roboto",sans-serif;
+}
+
+/*
+<h1 data-a11y-title-piece="" id="headingText" jsname="r4nke"><content>Recuperación de la cuenta</content></h1>
+*/
+
+.coLTd, ._link_ {
+  color: #515151;
+  color: #3c3c3c;
+  font: 600 14px/17px Roboto,sans-serif;
+  padding: 4px 0 0;
+
+}
+
+
+
+
+._ellipsis{
+  unicode-bidi: normal /*!rtl:plaintext*/;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+.fontsLoading{
+  
+}
