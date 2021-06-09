@@ -814,6 +814,35 @@ let arraySerialization = _Util.isArraySerialization();
 
 
 
+export const getQueryResumeYear = async (usI) => {
+
+  let _state = _Util.getStore();
+  let _userId = _state["agentId2"] || _Util.getProfileId();
+
+
+  let Qry2Inv = {
+    query:"getQueryResumeYear",
+    params:{
+      userId:_userId,
+    }
+  };
+
+
+  console.log(Qry2Inv)
+  const res = _Util.fetchStream_movie_data(_Util.get_GRAPHQLURL(),Qry2Inv);
+  const td = await res;
+
+  console.log(td)
+  if(td){
+    _Util.updStore('YearResume',td);
+    _Distpatch({
+      type: 'UPD_KEY_VALUE',
+      kv:{key:'observeChanges',value:_Util.gen12CodeId()}
+    })
+
+  }
+}
+
 
 
 

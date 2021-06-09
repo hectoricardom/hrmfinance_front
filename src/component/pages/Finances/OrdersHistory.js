@@ -6,19 +6,30 @@ import { useSelector, useDispatch } from 'react-redux'
 
 import { withRouter, NavLink} from 'react-router-dom';
 
-import {  OpenWatchDialog, fetchCities, fetchRemesa, OpenModal, getDispatch, CloseModal }  from '../../../actions/common'
+import {  OpenWatchDialog, fetchCities, getQueryResumeYear, OpenModal, getDispatch, CloseModal }  from '../../../actions/common'
 import loadable from '@loadable/component'
+
+
+
+
+
 
 
 
 import * as _Util from '../../../store/Util'
 
 
+
+
+import * as PdfRpt from '../../../store/printDoc'
+
 import '../../_styles.css'
 
 
 
 const BTNH = _Util.BTNH_Cmpt();
+
+const PrintCheck = loadable(() => import('./printCheck'))
 
 
 const SearchInput =  _Util.SearchInput_Cmpt();
@@ -41,6 +52,7 @@ const MovementItem = loadable(() => import('./MovementItem33'))
 
 const MonthFlt = loadable(() => import('./monthFilters'))
 
+const Graph = loadable(() => import('./GraphHRm'))
 
 
 const Icon2 = _Util.Icon_Cmpt();
@@ -267,6 +279,8 @@ export const loadGastos = async () => {
   };
 
  //console.log(Qry2Inv)
+ getQueryResumeYear();
+
   const res = _Util.fetchStream_movie_data(_Util.get_GRAPHQLURL(),Qry2Inv);
   const td = await res;
   //console.log(td)
@@ -393,6 +407,8 @@ const SendersComponent = (props) => {
       window.localStorage.setItem("lng","es");
       let frm =  _Util.getFormStore(_formName);
 
+
+      
       if(!frm || !frm["id"]){
         _Util.updFormStore(_formName,{})
         _updFormObs();
@@ -454,6 +470,29 @@ const confirmAgentId = (v) => {
 }
 
 
+
+
+
+
+const print_long_check = () => {
+  let data = {};
+  data['zIndex']=450;
+  data['observeResize']=true;    
+  data['props']={minHeight: '190px'};
+  data['content']=<PrintCheck confirm={ConfirmPrint} />;
+  OpenModal(dispatch,data);
+  
+}
+
+
+
+const ConfirmPrint = () => {
+  PdfRpt.Print_long_ckech_()
+}
+
+
+
+
     return (
       <>
         <style>
@@ -486,6 +525,23 @@ const confirmAgentId = (v) => {
                         />
                       </div>
                     :null}
+
+                      <div id={"_graph_container"}>
+                          <Graph />
+                      </div>  
+
+
+
+     
+                      <div className={`_dsplFlx`}>
+                        <div className={`flexSpace`}/>  
+                        <span onClick={()=>print_long_check()}>
+                          <BTNH theme={`light_blue`} title={"Imprimir Cheque"}/>
+                        </span>
+                        <div className={`flexSpace`}/> 
+                      </div>
+
+
 
 
                       <div className={`  headerTtl`}>

@@ -7986,3 +7986,123 @@ h3
 .pym81b.mov_type._svFrm{
   width: min-content;
 } 
+
+
+
+
+
+
+
+
+
+svg .y-axis .tick text.anchor-left, svg .y-axis .tick text.anchor-right {
+  text-anchor: end;
+}
+
+.time-series-chart .y-axis text, .time-series-chart .x-axis text {
+  fill: #5f6368;
+  font-size: 12px;
+}
+
+
+svg text {
+  font-family: Roboto,Helvetica Neue,sans-serif;
+}
+
+md-card.md-ga-theme {
+  color: rgba(0,0,0,0.87);
+  background-color: rgb(255,255,255);
+  border-radius: 2px;
+}
+
+
+.time-series-chart .tick line, .time-series-chart .hover-line.vertical {
+  stroke: rgba(0,0,0,0.08);
+}
+
+.time-series-chart .tick line, .time-series-chart .hover-line {
+  shape-rendering: crispEdges;
+}
+
+
+.time-series-chart path.domain {
+  display: none;
+}
+
+
+
+
+.chart-root path.domain {
+  display: none;
+}
+
+
+.chart-root path.domain {
+  display: none;
+}
+
+
+.legend {
+  height: 60px;
+  margin: 10px 10px 20px;
+}
+
+
+.legend .legend-entry {
+  float: left;
+  margin-right: 16px;
+}
+
+
+.legend .legend-entry .hover {
+  cursor: pointer;
+  fill: rgba(0,0,0,0);
+}
+
+.legend .legend-entry .hover.translucent {
+  fill: rgba(249,249,249,0.8);
+}
+
+.chart-root .line.translucent {
+  stroke-opacity: .2;
+}
+
+
+.chart-root .hover-rect {
+  fill: none;
+  pointer-events: all;
+}
+
+
+.chart-root .hover-line{
+  stroke: #dadce0;  
+}
+
+
+
+#_graph_container{
+  width: 80vw;
+  margin-bottom: 35px;
+}
+
+
+.legend .legend-entry .label {
+  font: 500 15px/24px 'Google Sans','GoogleSans-Local','Roboto';
+  letter-spacing: .11px;
+  fill: #5f6368;
+}
+
+.legend .legend-entry .total {
+  font: 500 14px/24px 'Google Sans','GoogleSans-Local','Roboto';
+  letter-spacing: .11px;
+}
+
+.legend .legend-entry .total._red {
+  fill: #B22222;
+}
+
+.legend 
+.label_head  {
+  font: 500 17px/24px 'Google Sans','GoogleSans-Local','Roboto';
+  letter-spacing: .11px;
+}

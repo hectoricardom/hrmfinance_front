@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@loadable/component": "^5.13.1",
+    "babel": "^6.23.0",
     "crypto-js": "^3.1.9-1",
     "isomorphic-fetch": "^2.2.1",
     "load-script": "^1.0.0",
