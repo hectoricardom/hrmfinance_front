@@ -1,0 +1,1 @@
+const a="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",u="0123456789BCDFGKSY";function e(t,o){let n="";for(let r=0;r<o;r++)n+=t.charAt(Math.floor(Math.random()*t.length));return n}function c(t=16){return e(a,t)}function f(t=4){return e(u,t)}export{f as a,c as g};
