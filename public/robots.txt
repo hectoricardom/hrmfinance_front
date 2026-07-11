@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /$
+Disallow: /accounts
+Disallow: /journal
+Disallow: /providers
+Disallow: /inventory
+Disallow: /transactions
+Disallow: /banking
+Disallow: /employees
+Disallow: /timesheets
+Disallow: /reports
+Disallow: /admin
