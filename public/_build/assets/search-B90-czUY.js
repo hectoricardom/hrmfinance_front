@@ -1,0 +1,1 @@
+import{I as r}from"./Icon-ET8315Ce.js";import{b as a,j as o}from"./web-B50drEWG.js";var c=[["path",{d:"m21 21-4.34-4.34",key:"14j7rj"}],["circle",{cx:"11",cy:"11",r:"8",key:"4ej97u"}]],m=e=>a(r,o(e,{iconNode:c,name:"search"})),p=m;export{p as s};
